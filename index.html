@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduSwarm AI — Learn together, grow further</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">E</span><span>Edu<span class="brand-accent">Swarm</span><small>AI LEARNING ECOSYSTEM</small></span></a>
+    <nav><a class="active" href="#workspace">Workspace</a><a href="#agents">Our agents</a><a href="#about">About</a></nav>
+    <div class="top-right"><span class="status-dot"></span><span id="mode-label">Checking system</span><button class="lang-btn" id="lang-btn">عربي</button></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="spark">✦</span> PERSONALIZED LEARNING, POWERED BY AGENTS</div>
+        <h1>Learning gets<br><span>better together.</span></h1>
+        <p>Meet your AI learning team. Ask a question, practice a concept, or build a study plan — the right agent steps in to help you move forward.</p>
+        <a class="hero-link" href="#workspace">Explore your workspace <span>↘</span></a>
+      </div>
+      <div class="orbital">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orbit orbit-c"></div>
+        <div class="core"><span>✦</span><b>AI</b><small>CORE</small></div>
+        <div class="orbit-node node-one"><span>✎</span></div><div class="orbit-node node-two"><span>⌘</span></div><div class="orbit-node node-three"><span>↗</span></div>
+        <div class="orbit-label label-one">TUTOR</div><div class="orbit-label label-two">QUIZ</div><div class="orbit-label label-three">COACH</div>
+      </div>
+    </section>
+
+    <section class="agent-strip" id="agents">
+      <div class="strip-heading"><span>YOUR PERSONAL AI TEAM</span><span class="line"></span><span>03 SPECIALISTS</span></div>
+      <div class="agent-grid">
+        <article class="agent-card"><div class="agent-icon violet">✎</div><div><h3>Tutor Agent</h3><p>Turns complex ideas into clear, step-by-step explanations.</p></div><span class="agent-number">01</span></article>
+        <article class="agent-card"><div class="agent-icon blue">⌘</div><div><h3>Quiz Agent</h3><p>Creates practice questions and helps you learn from mistakes.</p></div><span class="agent-number">02</span></article>
+        <article class="agent-card"><div class="agent-icon mint">↗</div><div><h3>Learning Coach</h3><p>Finds possible knowledge gaps and builds a study plan.</p></div><span class="agent-number">03</span></article>
+      </div>
+    </section>
+
+    <section class="workspace" id="workspace">
+      <div class="workspace-head"><div><div class="eyebrow">LEARNING WORKSPACE</div><h2>What are we learning today?</h2><p>Your next step starts with one question.</p></div><div class="workspace-tag"><span class="status-dot"></span> TEAM READY</div></div>
+      <div class="workspace-panel">
+        <div class="form-side">
+          <label for="question">YOUR QUESTION OR TOPIC</label>
+          <textarea id="question" placeholder="e.g. Explain database indexing with a simple example..."></textarea>
+          <div class="fields">
+            <div><label for="subject">SUBJECT</label><select id="subject"><option>Computer Science</option><option>Mathematics</option><option>English</option><option>Science</option><option>General</option></select></div>
+            <div><label for="level">MY LEVEL</label><select id="level"><option value="beginner">Beginner</option><option value="intermediate">Intermediate</option><option value="advanced">Advanced</option></select></div>
+          </div>
+          <label>CHOOSE YOUR LEARNING GOAL</label>
+          <div class="task-options">
+            <button class="task selected" data-task="auto"><span>✦</span><b>Explain</b><small>Understand a topic</small></button>
+            <button class="task" data-task="quiz"><span>⌘</span><b>Practice</b><small>Test your knowledge</small></button>
+            <button class="task" data-task="plan"><span>↗</span><b>Study plan</b><small>Know what to do next</small></button>
+          </div>
+          <button class="submit-btn" id="submit-btn">Build my learning session <span>→</span></button>
+          <p class="privacy-note">✧ Your learning journey, one step at a time.</p>
+        </div>
+        <div class="result-side">
+          <div class="result-top"><span class="result-label">YOUR LEARNING SESSION</span><span class="result-live"><i></i> <span id="result-status">WAITING</span></span></div>
+          <div id="result" class="result-content"><div class="empty-art"><div class="empty-ring">✦</div><span class="empty-line"></span><span class="empty-line short"></span></div><h3>Your next breakthrough<br>starts here.</h3><p>Ask your question and your AI team will work together to guide you.</p></div>
+          <div class="agent-activity"><span class="activity-title">AGENT ACTIVITY</span><div class="activity-row"><span class="mini-dot violet-bg"></span><span>Tutor Agent</span><small>READY</small></div><div class="activity-row"><span class="mini-dot blue-bg"></span><span>Quiz Agent</span><small>READY</small></div><div class="activity-row"><span class="mini-dot mint-bg"></span><span>Learning Coach</span><small>READY</small></div></div>
+        </div>
+      </div>
+    </section>
+    <section class="impact" id="about"><div><div class="eyebrow">WHY EDUSWARM</div><h2>Support should not<br>be a privilege.</h2></div><p>EduSwarm aims to make personalized academic support more accessible to learners who cannot always access one-to-one tutoring. It is a learning companion — not a replacement for teachers, course materials, or expert review.</p></section>
+  </main>
+  <footer><a class="brand" href="#"><span class="brand-mark">E</span><span>Edu<span class="brand-accent">Swarm</span><small>AI LEARNING ECOSYSTEM</small></span></a><span>Built for social good · Powered by Strands Agents SDK</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
